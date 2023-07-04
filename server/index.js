@@ -13,6 +13,7 @@ import postRoutes from "./routes/posts.js";
 import { register } from "./controllers/auth.js";
 import { checkAuth } from "./middleware/checkAuth.js";
 import { createPost } from "./controllers/posts.js";
+import { config } from "./config/config.js";
 
 /*Configurations */
 const __filename = fileURLToPath(import.meta.url);
@@ -51,7 +52,7 @@ app.use("/posts", postRoutes);
 /*MONGOOSE SETUP */
 const port = 3001;
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect(config.dbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
