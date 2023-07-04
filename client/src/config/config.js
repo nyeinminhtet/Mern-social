@@ -1,3 +1,3 @@
 export const config = {
-  api: process.env.REACT_APP_API,
+  api: process.env.REACT_APP_API || "",
 };
