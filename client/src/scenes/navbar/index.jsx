@@ -106,7 +106,7 @@ const Navbar = () => {
         ) : (
           <IconButton
             sx={{
-              position: "fixed",
+              position: "absolute",
               right: 10,
             }}
             onClick={() => setIsMobileMenuToggle(!isMobileMenuToggle)}
@@ -120,10 +120,10 @@ const Navbar = () => {
             position="fixed"
             right="3%"
             top="3%"
-            height="67%"
+            height="60%"
             zIndex="10"
             maxWidth="500px"
-            minWidth="300px"
+            minWidth="200px"
             backgroundColor={background}
           >
             {/*Close button */}
@@ -141,7 +141,7 @@ const Navbar = () => {
               flexDirection="column"
               justifyContent="center"
               alignItems="center"
-              gap="3rem"
+              gap="1.5rem"
             >
               <IconButton
                 onClick={() => distPatch(setMode())}
