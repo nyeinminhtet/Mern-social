@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://social-server-9pbo.onrender.com"
+      "destination": "https://social-server-9pbo.onrender.com/api/$1"
     }
   ]
 }
