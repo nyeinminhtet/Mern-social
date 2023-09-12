@@ -1,3 +1,2 @@
 # SocialMedia
-https://socialplatform.vercel.app/
-
+SocialMedia with MERN stack
